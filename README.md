@@ -19,7 +19,7 @@ Before you begin, ensure you have the following installed:
 
 3. **Clone the Repository**
 
-   `git clone https://github.com/yourusername/custom-dynamic-block.git`
+   `git clone [https://github.com/yourusername/custom-dynamic-block.git](https://github.com/mariuszmatlosz/example-dynamic.git)`
 
 4. **Navigate to the Plugin Directory**
 
