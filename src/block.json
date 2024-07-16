@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "testblock/example-dynamic",
+	"version": "0.1.0",
+	"title": "Dynamic Test Block",
+	"category": "widgets",
+	"icon": "clock",
+	"description": "Block that show page visit date",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"heading": {
+		  "type": "string",
+		  "default": "lorem ipsum"
+		},
+		"text": {
+		  "type": "string",
+		  "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		},
+		"imageUrl": {
+			"type": "string",
+			"default": "https://placehold.co/400"
+		},
+		"imageLink": {
+			"type": "string",
+			"default": "https://wordpress.org"
+		}
+	},
+	"textdomain": "example-dynamic",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

@@ -6,7 +6,47 @@
  */
 
 .wp-block-testblock-example-dynamic {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+	.testblock {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		&__left {
+			width: 60%;
+			@media screen and (max-width: 640px) {
+				order: 2;
+				width: 100%;
+
+			}
+			img {
+				min-height: 200px;
+				max-height: 30vh;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+		&__right { 
+			width: 20%;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			@media screen and (max-width: 640px) {
+				order: 1;
+				width: 100%;
+				text-align: center;
+			}
+			h2,
+			p {
+				margin: 0;
+				padding: 0;
+			}
+		}
+		&__footer {
+			width: 100%;
+			text-align: center;
+			@media screen and (max-width: 640px) {
+				order: 3;
+			}
+		}
+	}
+	
 }
